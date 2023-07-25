@@ -1,0 +1,351 @@
+body{
+    background-color: aliceblue;
+}
+
+
+/* Estilos de la barra de navegacion*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no caben en una sola fila */
+}
+
+.tituloaero {
+    font-size: 32px;
+    margin: 0;
+    font-size: 24px; /* Reducir el tamaño del título en dispositivos pequeños */
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+    margin-right: 20; /* Eliminar el margen derecho entre elementos en dispositivos pequeños */
+    margin-bottom: 10px; /* Agregar un espacio entre elementos en dispositivos pequeños */
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    display: block; /* Convertir los enlaces en bloques para ocupar el ancho completo */
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-item a:hover {
+    background-color: #42a5f5;
+    border-radius: 5px;
+}
+
+  /* Estilos para la pestaña */
+.contacto {
+    position: relative;
+}
+
+.pestaña {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.contacto:hover .pestaña {
+    display: block;
+}
+
+
+/*busqueda de vuelos*/
+
+.busqueda {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #007BFF; /* Color azul */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1); /* Sombra celeste */
+    max-width: 100%; /* Hacer que el formulario ocupe todo el ancho disponible */
+}
+
+.titulovuelo {
+    color: #007BFF; /* Color azul */
+}
+
+.formvuelo {
+    margin-top: 20px;
+}
+
+.formvuelo label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.formvuelo input[type="text"],
+.formvuelo input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #007BFF; /* Color azul */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.formvuelo input[type="submit"] {
+    background-color: #007BFF; /* Color azul */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formvuelo input[type="submit"]:hover {
+    background-color: #0056b3; /* Color azul oscuro */
+}
+
+/*estilos en el metodo de pago*/
+h3.pagos{
+    display: flex;
+    justify-content: center;
+}
+ul.tarjetas{
+display: flex;
+justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+}
+li img {
+    display: flex;
+    width: 50px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    padding: 7px;
+}
+
+/*estilos del Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002855;
+    padding: 20px;
+    width: 100%;
+    height: 50px; /* Ajusta la altura según necesidades */
+}
+
+div.Titulofooter {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px; /* Ajusta el margen izquierdo */
+    margin-right: 50px; /* Ajusta el margen derecho */
+    position: relative; /* o absolute, según tus necesidades */
+    left: -70px; /* Ajusta el valor negativo para mover hacia la izquierda */
+}
+
+div.RedesSociales{
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    margin-left: 20px; /* Ajusta el margen izquierdo */
+    margin-right: 90px; /* Ajusta el margen derecho */
+    position: relative; /* o absolute, según tus necesidades */
+    left: -106px; /* Ajusta el valor negativo para mover hacia la izquierda */
+}
+
+svg.facebook{
+    width: 30px; /* Ajusta el ancho */
+    height: 50px; /* Ajusta la altura */
+}
+
+svg.instagram{
+    width: 30px; /* Ajusta el ancho */
+    height: 50px; /* Ajusta la altura */
+}
+
+svg.twitter{
+    width: 30px; /* Ajusta el ancho */
+    height: 30px; /* Ajusta la altura */
+}
+
+
+/*estilos de las recomendacions de viajes*/
+section {
+    display: flex;
+    overflow-x: auto;
+}
+
+.elemento {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 40px;
+    box-shadow: inset 0 2px 20px 2px #000000;
+    max-width: 26%;
+}
+
+.elemento img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+section.pagos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(171, 186, 228, 0.726);
+    padding: 20px;
+    height: 50px;
+}
+
+
+.busqueda button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.recomendacion {
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.precio {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/*texto de porque nos deberias elegir*/
+
+.textonosotros {
+    background-color: #007BFF; /* Azul */
+    color: #fff; /* Texto en blanco */
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reducir el padding para evitar ocupar demasiado espacio */
+}
+
+.textonosotros h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.textonosotros p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor del formulario */
+.container {
+    position: relative;
+}
+
+  /* Estilos para el cartelito de bienvenida */
+.bienvenida {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #42a5f5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .tituloaero {
+        font-size: 28px; /* Ajustar el tamaño del título para tablets */
+    }
+    .nav {
+        flex-direction: row; /* Volver a alinear los enlaces horizontalmente */
+    }
+    .nav li {
+        margin-right: 20px; /* Restaurar el margen derecho entre elementos */
+        margin-bottom: 0; /* Eliminar el espacio entre elementos */
+    }
+    .nav-item {
+        display: inline-block; /* Volver a mostrar los enlaces en línea */
+    }
+    /* ... otros ajustes para tablets ... */
+}
+
+/* Estilos para celulares */
+@media (max-width: 767px) {
+    .tituloaero {
+        font-size: 20px; /* Ajustar el tamaño del título para celulares */
+    }
+    .nav {
+        flex-direction: column; /* Alinear los enlaces verticalmente */
+    }
+    .nav li {
+        margin-right: 0; /* Eliminar el margen derecho entre elementos */
+        margin-bottom: 10px; /* Agregar un espacio entre elementos */
+    }
+    .nav-item {
+        display: block; /* Convertir los enlaces en bloques para ocupar el ancho completo */
+    }
+    .hamburguesa {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .elemento {
+            max-width: 100%; /* Ocupar todo el ancho de la pantalla */
+            margin: 10px auto; /* Centrar horizontalmente */
+            padding: 20px; /* Reducir el padding */
+            box-shadow: none; /* Eliminar la sombra */
+            background-color: #f2f2f2; /* Fondo gris */
+    }
+    .elemento img {
+                max-width: 80%; /* Reducir el tamaño de la imagen */
+                margin: 0 auto; /* Centrar horizontalmente */
+    }
+}
+
